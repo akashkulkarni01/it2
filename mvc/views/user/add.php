@@ -221,7 +221,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="pen" class="col-sm-2 control-label">
-                            Pan Number <span class="text-red">*</span>
+                            PAN Number <span class="text-red">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="pen" name="pen" value="<?=set_value('pen')?>" >
