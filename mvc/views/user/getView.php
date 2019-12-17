@@ -117,7 +117,7 @@
                                     </div>
 
                                     <div class="profile-view-tab">
-                                        <p><span>IFS Code </span>: <?=$profile->ifsc?></p>
+                                        <p><span>IFSC Code </span>: <?=$profile->ifsc?></p>
                                     </div>
                             </div>
                         </div>
