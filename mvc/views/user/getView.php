@@ -89,7 +89,7 @@
                                     <p><span><?=$this->lang->line("category")?> </span>: <?=$profile->cat_title?></p>
                                 </div>
                                 <div class="profile-view-tab">
-                                        <p><span>Pan Number</span>: <?=$profile->pen?></p>
+                                        <p><span>PAN Number</span>: <?=$profile->pen?></p>
                                     </div>
 
                                     <div class="profile-view-tab">
@@ -113,11 +113,11 @@
                                     </div>
 
                                     <div class="profile-view-tab">
-                                        <p><span>Account No</span>: <?=$profile->accountno?></p>
+                                        <p><span>Account Number</span>: <?=$profile->accountno?></p>
                                     </div>
 
                                     <div class="profile-view-tab">
-                                        <p><span>IFS Code </span>: <?=$profile->ifsc?></p>
+                                        <p><span>IFSC Code </span>: <?=$profile->ifsc?></p>
                                     </div>
                             </div>
                         </div>

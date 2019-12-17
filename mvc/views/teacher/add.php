@@ -237,7 +237,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="pen" class="col-sm-2 control-label">
-                            Pen Number <span class="text-red">*</span>
+                            PAN Number <span class="text-red">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="pen" name="pen" value="<?=set_value('pen')?>" >
@@ -273,7 +273,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="esic" class="col-sm-2 control-label">
-                            Esic Number
+                            ESIC Number
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="esic" name="esic" value="<?=set_value('esic')?>" >
@@ -291,7 +291,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="esic" class="col-sm-2 control-label">
-                            Pf Number
+                            PF Number
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="pfno" name="pfno" value="<?=set_value('pfno')?>" >
@@ -363,7 +363,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="ifsc" class="col-sm-2 control-label">
-                            IFS Code <span class="text-red">*</span>
+                            IFSC Code <span class="text-red">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="ifsc" name="ifsc" value="<?=set_value('ifsc')?>" >
