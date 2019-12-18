@@ -22,20 +22,7 @@
         </script>
     <?php } ?>
 
-    <?php if((config_item('demo') === FALSE) && ($siteinfos->auto_update_notification == 1) && ($versionChecking != 'none')) { ?>
-        <?php if($this->session->userdata('updatestatus') === null) { ?>
-            <div class="col-sm-12" id="updatenotify">
-                <div class="callout callout-success">
-                    <h4>Dear Admin</h4>
-                    <p>INIlabs school management system has released a new update.</p>
-                    <p>Do you want to update it now <?=config_item('ini_version')?> to <?=$versionChecking?> ?</p>
-                    <a href="<?=base_url('dashboard/remind')?>" class="btn btn-danger">Remind me</a>
-                    <a href="<?=base_url('dashboard/update')?>" class="btn btn-success">Update</a>
-                </div>
-            </div>
-        <?php } ?> 
-    <?php } ?>
-
+   
     <?php
         $arrayColor = array(
             'bg-orange-dark',
