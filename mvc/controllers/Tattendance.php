@@ -161,6 +161,7 @@ class Tattendance extends Admin_Controller {
 							$this->data['dateinfo']['date'] = date('jS F Y', strtotime($date));
 							$this->data['tattendances'] = pluck($this->tattendance_m->get_order_by_tattendance(array("monthyear" => $monthyear, 'schoolyearID' => $schoolyearID)), 'obj', 'teacherID');
 							$this->data['monthyear'] = $monthyear;
+							
 							$this->data['day'] = $explode_date[0];
 						}
 						$this->data["subview"] = "tattendance/add";

@@ -100,13 +100,24 @@
 
                                                          $attendanceId = $uattendances[$user->userID]->uattendanceID;
 
-                                                         echo "<input type='radio' onClick='checkIn($attendanceId)' $pmethod id='checkin$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'> Time In &nbsp;";
+if($uattendances[$user->userID]->check_in_time == NULL){
+echo "<input type='radio' onClick='checkIn($attendanceId)' $pmethod id='checkin$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'> Time In &nbsp;";
+}
 
-                                                         echo str_repeat("&nbsp;", 5).$uattendances[$user->userID]->check_in_time;
+
+
+else if($uattendances[$user->userID]->check_out_time ){
+  echo "Time In:".$uattendances[$user->userID]->check_in_time;
 
                                                          echo str_repeat("&nbsp;", 5)."<input type='radio'  onClick='checkOut($attendanceId)' $lemethod id='checkout$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'> Time Out &nbsp;";
+}
+
+
+                                                         
+
+                                                         
                       
-                                                         echo str_repeat("&nbsp;", 5).$uattendances[$user->userID]->check_out_time;
+                                                         echo "".$uattendances[$user->userID]->check_out_time;
 
                                                     }
                                                 }
