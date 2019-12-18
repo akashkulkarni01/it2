@@ -92,14 +92,25 @@
                                                             //$amethod = "checked";
                                                         }  
                                                         $attendanceId = $tattendances[$teacher->teacherID]->tattendanceID;
+if($tattendances[$teacher->teacherID]->check_in_time == NULL){
+   echo "<input type='radio' onClick='checkIn($attendanceId)' $pmethod id='checkin$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'> Time In &nbsp;";
 
-                                                         echo "<input type='radio' onClick='checkIn($attendanceId)' $pmethod id='checkin$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'> Time In &nbsp;";
+}
+else {
 
-                                                         echo str_repeat("&nbsp;", 5).$tattendances[$teacher->teacherID]->check_in_time;
-
-                                                         echo str_repeat("&nbsp;", 5)."<input type='radio'  onClick='checkOut($attendanceId)' $lemethod id='checkout$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'> Time Out &nbsp;";
+ echo "<b>Time In :</b>"/*str_repeat("&nbsp;", 5)*/.$tattendances[$teacher->teacherID]->check_in_time;
+ if($tattendances[$teacher->teacherID]->check_out_time == NULL){
+   echo str_repeat("&nbsp;", 5)."<input type='radio'  onClick='checkOut($attendanceId)' $lemethod id='checkout$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'>;";
+ }
+                                                        
                       
-                                                          echo str_repeat("&nbsp;", 5).$tattendances[$teacher->teacherID]->check_out_time;
+                                                          echo "<b>Time Out :</b>".$tattendances[$teacher->teacherID]->check_out_time;
+}
+
+
+                                                        
+
+                                                        
 
                                                          //echo  btn_attendance_radio($tattendances[$teacher->teacherID]->tattendanceID.'-1', $pmethod, "attendance btn btn-warning present", "attendance".$tattendances[$teacher->teacherID]->tattendanceID, $this->lang->line('intime'),'P');
 
@@ -217,6 +228,7 @@
                                           "showMethod": "fadeIn",
                                           "hideMethod": "fadeOut"
                                         }
+
                                     } else {
                                         $.each(response, function(index, value) {
                                             if(index != 'status') {
