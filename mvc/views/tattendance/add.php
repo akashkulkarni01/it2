@@ -162,7 +162,7 @@ else {
                                
                               var attendance = {};
                               var d =    new Date();
-                              var time = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                              var time = "<?= date("H:i:s");?>";
                               var day = "<?=$day?>";
                               var monthyear = "<?=$monthyear?>";
                               var todattimein = "ti"+day;
@@ -183,7 +183,7 @@ else {
                               var attendance = {};
                                var x = {};
                               var d =    new Date();
-                              var time = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                              var time = "<?= date("H:i:s");?>";
                               var day = "<?=$day?>";
                               var monthyear = "<?=$monthyear?>";
                                var todattimeout = "to"+day;
