@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-9">
+            <div class="col-sm-12">
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#attendance" data-toggle="tab"><?=$this->lang->line('tattendance_attendance')?></a></li>

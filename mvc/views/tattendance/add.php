@@ -1,3 +1,4 @@
+
 <div class="box">
     <div class="box-header">
         <h3 class="box-title"><i class="fa icon-tattendance"></i> <?=$this->lang->line('panel_title')?></h3>
@@ -92,19 +93,22 @@
                                                             //$amethod = "checked";
                                                         }  
                                                         $attendanceId = $tattendances[$teacher->teacherID]->tattendanceID;
-if($tattendances[$teacher->teacherID]->check_in_time == NULL){
+$tin = 'ti'.$day;
+$tout ='to'.$day;
+
+if($tattendances[$teacher->teacherID]->$tin == NULL){
    echo "<input type='radio' onClick='checkIn($attendanceId)' $pmethod id='checkin$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'> Time In &nbsp;";
 
 }
 else {
 
- echo "<b>Time In :</b>"/*str_repeat("&nbsp;", 5)*/.$tattendances[$teacher->teacherID]->check_in_time;
- if($tattendances[$teacher->teacherID]->check_out_time == NULL){
+ echo "<b>Time In :</b>"/*str_repeat("&nbsp;", 5)*/.$tattendances[$teacher->teacherID]->$tin;
+ if($tattendances[$teacher->teacherID]->$tout == NULL){
    echo str_repeat("&nbsp;", 5)."<input type='radio'  onClick='checkOut($attendanceId)' $lemethod id='checkout$attendanceId' class='attendance btn btn-warning present' name='attendance$attendanceId'>;";
  }
                                                         
                       
-                                                          echo "<b>Time Out :</b>".$tattendances[$teacher->teacherID]->check_out_time;
+                                                          echo " <b>Time Out :</b>".$tattendances[$teacher->teacherID]->$tout;
 }
 
 
@@ -158,13 +162,15 @@ else {
                                
                               var attendance = {};
                               var d =    new Date();
-                              var time = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                              var time = "<?= date("H:i:s");?>";
                               var day = "<?=$day?>";
                               var monthyear = "<?=$monthyear?>";
+                              var todattimein = "ti"+day;
                               attendance['tattendanceID']=id;
                               attendance['check_in_time']=time;
                               attendance['a'+day]='P';
                               attendance['flag']='TI';
+                              attendance[todattimein] =time;
                               attendanceArray.push(attendance);
                            
 
@@ -177,12 +183,12 @@ else {
                               var attendance = {};
                                var x = {};
                               var d =    new Date();
-                              var time = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                              var time = "<?= date("H:i:s");?>";
                               var day = "<?=$day?>";
                               var monthyear = "<?=$monthyear?>";
-
+                               var todattimeout = "to"+day;
                               attendance['tattendanceID']=id;
-                              attendance['check_out_time']=time;
+                              attendance[todattimeout]=time;
                               attendance['a'+day]='P';
                               attendance['flag']='TO';
                               attendanceArray.push(attendance);
