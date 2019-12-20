@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2019 at 01:09 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.1.25
+-- Generation Time: Dec 20, 2019 at 05:31 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 5.6.37
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -1464,10 +1464,13 @@ INSERT INTO `loginlog` (`loginlogID`, `ip`, `browser`, `operatingsystem`, `login
 (156, '127.0.0.1', 'Google Chrome', 'windows', 1576201081, 1576201093, 8, 4),
 (157, '127.0.0.1', 'Google Chrome', 'windows', 1576201178, 1576201478, 1, 1),
 (158, '127.0.0.1', 'Google Chrome', 'windows', 1576292453, 1576292753, 1, 1),
-(159, '127.0.0.1', 'Google Chrome', 'windows', 1576298123, NULL, 1, 1),
+(159, '127.0.0.1', 'Google Chrome', 'windows', 1576298123, 1576298423, 1, 1),
 (160, '127.0.0.1', 'Mozilla Firefox', 'windows', 1576734192, 1576652782, 1, 1),
 (161, '127.0.0.1', 'Mozilla Firefox', 'windows', 1576652797, 1576652849, 2, 8),
-(162, '127.0.0.1', 'Mozilla Firefox', 'windows', 1576652861, NULL, 1, 1);
+(162, '127.0.0.1', 'Mozilla Firefox', 'windows', 1576652861, NULL, 1, 1),
+(163, '127.0.0.1', 'Google Chrome', 'windows', 1576811826, 1576811930, 1, 1),
+(164, '127.0.0.1', 'Google Chrome', 'windows', 1576811948, 1576812119, 2, 2),
+(165, '127.0.0.1', 'Google Chrome', 'windows', 1576812128, NULL, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4673,7 +4676,7 @@ INSERT INTO `tattendance` (`tattendanceID`, `schoolyearID`, `teacherID`, `userty
 (63, 1, 8, 2, '12-2019', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (64, 1, 6, 2, '12-2019', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (65, 1, 5, 2, '12-2019', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(66, 1, 7, 2, '12-2019', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(66, 1, 7, 2, '12-2019', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'P', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '20:47:50', NULL, 'TO', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '20:47:50', '20:48:05', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (67, 1, 4, 2, '12-2019', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -4703,6 +4706,7 @@ CREATE TABLE `teacher` (
   `branch` varchar(50) DEFAULT NULL,
   `accountno` varchar(50) DEFAULT NULL,
   `ifsc` varchar(50) DEFAULT NULL,
+  `is_permanent` char(1) NOT NULL DEFAULT '0' COMMENT '0 = temp; 1=perm',
   `photo` varchar(200) DEFAULT NULL,
   `username` varchar(40) NOT NULL,
   `password` varchar(128) NOT NULL,
@@ -4719,15 +4723,15 @@ CREATE TABLE `teacher` (
 -- Dumping data for table `teacher`
 --
 
-INSERT INTO `teacher` (`teacherID`, `name`, `designation`, `dob`, `sex`, `shift`, `category`, `religion`, `email`, `phone`, `address`, `jod`, `pen`, `aadhar`, `esic`, `pfno`, `bankname`, `branch`, `accountno`, `ifsc`, `photo`, `username`, `password`, `usertypeID`, `create_date`, `modify_date`, `create_userID`, `create_username`, `create_usertype`, `active`) VALUES
-(1, 'S Saxena', 'Faculty', '1959-09-27', 'Male', '', '', 'Hindu', 'ssaxena@witage.net', '9890169318', 'warje', '2019-02-04', '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'default.png', 'ssaxena', '1a426eb22956167720f046bceb20937feb24f6a6701bff66f782747d1707d02ba9572d35939640b7907b401acf03b7174fd09e73a5da26cbaaad16c04727413a', 2, '2019-07-28 07:32:44', '2019-07-28 07:32:44', 1, 'initest_admin', 'Admin', 1),
-(2, 'Sample Teacher', 'Teacher', '1970-02-03', 'Male', '', '', 'Hindu', 'sample@sample.com', '', '', '2019-07-01', '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'default.png', 'teacher', '6b8042d7c514d826a1590886563ee06b4e987dae5bdd6be802763276b8810faa513e5b2663dea316b402e123c5d54b1ea80f085f08055509a4f977b5bd4724dc', 2, '2019-08-29 06:24:06', '2019-08-29 06:24:06', 1, 'initest_admin', 'Admin', 1),
-(3, 'Ankur Shakya', 'SE', '1994-06-14', 'Male', '', '', 'Hindu', 'ankurshakya54712@gmail.com', '8821907528', 'thane ke piche', '2019-09-23', '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'default.png', 'ankur', 'bf7dd243871c19613250abad0ded580a33b2e1739a917f0f3b4777cf10ed7da0d1ae977c450644f10ad19c4ae960ae6f660d984a6af22941c9bb8f3cf6bc9bf1', 2, '2019-09-25 08:08:49', '2019-09-25 08:08:49', 1, 'initest_admin', 'Admin', 1),
-(4, 'Vinit', 'teacher', '1992-10-20', 'Male', '', '', 'Hindu', 'test12@gmail.com', '1234567890', 'Gurugram', '2019-10-10', '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'default.png', 'teacher12', '716cb8bf22315676296c750a79d2dc1785c27d9adc3b4533e4d06565a08c0561739f70ea0ee0b12e3b4b57ccaebdd3668c9cca98ba561dce1bdc3dd26cde3156', 2, '2019-10-18 02:30:21', '2019-10-18 02:30:21', 1, 'initest_admin', 'Admin', 1),
-(5, 'Test', 'Teacher', '1992-07-04', 'Male', '', '', 'Hindu', 'test@gmail.com', '1234567890', 'Test', '2019-10-10', '123456789', '23456789567', '2345ertyu', '1234567', NULL, NULL, NULL, NULL, 'bfab4688fd62fd64eadd1b8d426f3d82f5ed1e61cec7b98a5941230973646f2145e20ccf2d8851dd89824ffcd452c27a8c1160b5007dd5c982329994845453f0.png', 'test', 'e3779dcbaa0d5d7d52b6427cd51c9038573b29eff7d749e41806b04f588ffa06f22870cb9fba2dea642c4f9eb5ba97fc3add001cd3628641fe365b8127a45bf8', 2, '2019-10-19 11:22:43', '2019-10-19 11:22:43', 1, 'initest_admin', 'Admin', 1),
-(6, 'Teacher', 'Faculty', '2017-04-04', 'Male', '', '', '', 'satyam.sparihar2000@gmail.com', '7304147193', 'Ward No.6,, House No. 66, Gram Bichholi, Ethar, Bhind', '2007-01-09', 'APUYH5632D', '452168623652', '', '', 'SBI', 'Pune', '1235632563', 'IFSC22365', 'default.png', 'teacher-1', '38bf99b8f85288904c31e553666cdbc7d5b26b30fc8d2127848e88a2ded7f3cb635437de1fe6db77a969d6d775f9053dfda241b5e3b340a83a3efcd9c7aa644f', 2, '2019-10-23 10:23:32', '2019-10-23 10:23:32', 1, 'initest_admin', 'Admin', 1),
-(7, 'test teacher', 'tset', '2019-12-13', 'Male', '5', '2', 'fasfasfas', 'test2@gmail.com', '', '', '2019-12-03', '1243255345', '34325235235235', '', '', 'boi', 'somalwada', '0333322222222', 'ASDFGH', '7a51d54e7903e16b4f5a37872ecd88a4b534c5b7568b8874e08d367ff6fa36e77d8f15af35b25988e96a3efdc1c0247e96e1040273ebb16daa9392e84632359e.jpg', 'test_teacher', '331242f85078bb075066c0085e7bfcdd35be2064d5fa8dbf40a9321a6d44151943fff2530c46efb3d6d2c60c3b397f7ab4f43fbdbd242d03c95a9372e128d271', 2, '2019-12-14 09:24:07', '2019-12-14 10:17:36', 1, 'initest_admin', 'Admin', 1),
-(8, 'Shan', 'de', '2010-02-03', 'Male', '2', '1', '', 'as@gmail.comm', '', '', '2019-11-26', 'AA', 'AAA', 'A', 'A', 'AA', 'AA', '1212', '12rf3', 'default.png', 'shantu123', '8121f300d8f66319bfc75e73d04d3f654c7f7febeaac87b44e7d7e1ba301e1c9549489db0670da8dc250d5023654b6331a04b414d597a032d9cb4296ad614d9e', 2, '2019-12-18 12:36:05', '2019-12-18 12:36:05', 1, 'initest_admin', 'Admin', 1);
+INSERT INTO `teacher` (`teacherID`, `name`, `designation`, `dob`, `sex`, `shift`, `category`, `religion`, `email`, `phone`, `address`, `jod`, `pen`, `aadhar`, `esic`, `pfno`, `bankname`, `branch`, `accountno`, `ifsc`, `is_permanent`, `photo`, `username`, `password`, `usertypeID`, `create_date`, `modify_date`, `create_userID`, `create_username`, `create_usertype`, `active`) VALUES
+(1, 'S Saxena', 'Faculty', '1959-09-27', 'Male', '', '', 'Hindu', 'ssaxena@witage.net', '9890169318', 'warje', '2019-02-04', '', '', NULL, NULL, NULL, NULL, NULL, NULL, '0', 'default.png', 'ssaxena', '1a426eb22956167720f046bceb20937feb24f6a6701bff66f782747d1707d02ba9572d35939640b7907b401acf03b7174fd09e73a5da26cbaaad16c04727413a', 2, '2019-07-28 07:32:44', '2019-07-28 07:32:44', 1, 'initest_admin', 'Admin', 1),
+(2, 'Sample Teacher', 'Teacher', '1970-02-03', 'Male', '', '', 'Hindu', 'sample@sample.com', '', '', '2019-07-01', '', '', NULL, NULL, NULL, NULL, NULL, NULL, '0', 'default.png', 'teacher', '6b8042d7c514d826a1590886563ee06b4e987dae5bdd6be802763276b8810faa513e5b2663dea316b402e123c5d54b1ea80f085f08055509a4f977b5bd4724dc', 2, '2019-08-29 06:24:06', '2019-08-29 06:24:06', 1, 'initest_admin', 'Admin', 1),
+(3, 'Ankur Shakya', 'SE', '1994-06-14', 'Male', '', '', 'Hindu', 'ankurshakya54712@gmail.com', '8821907528', 'thane ke piche', '2019-09-23', '', '', NULL, NULL, NULL, NULL, NULL, NULL, '0', 'default.png', 'ankur', 'bf7dd243871c19613250abad0ded580a33b2e1739a917f0f3b4777cf10ed7da0d1ae977c450644f10ad19c4ae960ae6f660d984a6af22941c9bb8f3cf6bc9bf1', 2, '2019-09-25 08:08:49', '2019-09-25 08:08:49', 1, 'initest_admin', 'Admin', 1),
+(4, 'Vinit', 'teacher', '1992-10-20', 'Male', '', '', 'Hindu', 'test12@gmail.com', '1234567890', 'Gurugram', '2019-10-10', '', '', NULL, NULL, NULL, NULL, NULL, NULL, '0', 'default.png', 'teacher12', '716cb8bf22315676296c750a79d2dc1785c27d9adc3b4533e4d06565a08c0561739f70ea0ee0b12e3b4b57ccaebdd3668c9cca98ba561dce1bdc3dd26cde3156', 2, '2019-10-18 02:30:21', '2019-10-18 02:30:21', 1, 'initest_admin', 'Admin', 1),
+(5, 'Test', 'Teacher', '1992-07-04', 'Male', '', '', 'Hindu', 'test@gmail.com', '1234567890', 'Test', '2019-10-10', '123456789', '23456789567', '2345ertyu', '1234567', NULL, NULL, NULL, NULL, '0', 'bfab4688fd62fd64eadd1b8d426f3d82f5ed1e61cec7b98a5941230973646f2145e20ccf2d8851dd89824ffcd452c27a8c1160b5007dd5c982329994845453f0.png', 'test', 'e3779dcbaa0d5d7d52b6427cd51c9038573b29eff7d749e41806b04f588ffa06f22870cb9fba2dea642c4f9eb5ba97fc3add001cd3628641fe365b8127a45bf8', 2, '2019-10-19 11:22:43', '2019-10-19 11:22:43', 1, 'initest_admin', 'Admin', 1),
+(6, 'Teacher', 'Faculty', '2017-04-04', 'Male', '', '', '', 'satyam.sparihar2000@gmail.com', '7304147193', 'Ward No.6,, House No. 66, Gram Bichholi, Ethar, Bhind', '2007-01-09', 'APUYH5632D', '452168623652', '', '', 'SBI', 'Pune', '1235632563', 'IFSC22365', '0', 'default.png', 'teacher-1', '38bf99b8f85288904c31e553666cdbc7d5b26b30fc8d2127848e88a2ded7f3cb635437de1fe6db77a969d6d775f9053dfda241b5e3b340a83a3efcd9c7aa644f', 2, '2019-10-23 10:23:32', '2019-10-23 10:23:32', 1, 'initest_admin', 'Admin', 1),
+(7, 'test teacher', 'tset', '2019-12-13', 'Male', '5', '2', 'fasfasfas', 'test2@gmail.com', '', '', '2019-12-03', '1243255345', '34325235235235', '', '', 'boi', 'somalwada', '0333322222222', 'ASDFGH', '1', '7a51d54e7903e16b4f5a37872ecd88a4b534c5b7568b8874e08d367ff6fa36e77d8f15af35b25988e96a3efdc1c0247e96e1040273ebb16daa9392e84632359e.jpg', 'test_teacher', '331242f85078bb075066c0085e7bfcdd35be2064d5fa8dbf40a9321a6d44151943fff2530c46efb3d6d2c60c3b397f7ab4f43fbdbd242d03c95a9372e128d271', 2, '2019-12-14 09:24:07', '2019-12-20 09:24:25', 1, 'initest_admin', 'Admin', 1),
+(8, 'Shan', 'de', '2010-02-03', 'Male', '2', '1', '', 'as@gmail.comm', '', '', '2019-11-26', 'AA', 'AAA', 'A', 'A', 'AA', 'AA', '1212', '12rf3', '0', 'default.png', 'shantu123', '8121f300d8f66319bfc75e73d04d3f654c7f7febeaac87b44e7d7e1ba301e1c9549489db0670da8dc250d5023654b6331a04b414d597a032d9cb4296ad614d9e', 2, '2019-12-18 12:36:05', '2019-12-18 12:36:05', 1, 'initest_admin', 'Admin', 1);
 
 -- --------------------------------------------------------
 
@@ -6180,7 +6184,7 @@ ALTER TABLE `location`
 -- AUTO_INCREMENT for table `loginlog`
 --
 ALTER TABLE `loginlog`
-  MODIFY `loginlogID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+  MODIFY `loginlogID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=166;
 
 --
 -- AUTO_INCREMENT for table `mailandsms`
