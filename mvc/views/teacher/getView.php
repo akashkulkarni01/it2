@@ -111,6 +111,10 @@
                                     <div class="profile-view-tab">
                                         <p><span>IFSC Code </span>: <?=$profile->ifsc?></p>
                                     </div>
+
+                                    <div class="profile-view-tab">
+                                        <p><span><?= $this->lang->line('type'); ?> </span>: <?php if($profile->is_permanent == 1){ echo "Permanent"; } else { echo "Temporary"; }?></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -150,6 +150,11 @@ class Teacher extends Admin_Controller {
 				'field' => 'categoryus',
 				'label' => $this->lang->line("category"),
 				'rules' => 'trim|required|xss_clean'
+			),
+			array(
+				'field' => 'is_permanent',
+				'label' => $this->lang->line("type"),
+				'rules' => 'trim|required|xss_clean'
 			)
 		);
 		return $rules;
@@ -290,6 +295,7 @@ class Teacher extends Admin_Controller {
 				$array["sex"] = $this->input->post("sex");
 				$array["shift"] = $this->input->post("shift");
 				$array["category"] = $this->input->post("categoryus");
+				$array["is_permanent"] = $this->input->post("is_permanent");
 				$array['religion'] = $this->input->post("religion");
 				$array['email'] = $this->input->post("email");
 				$array['phone'] = $this->input->post("phone");
@@ -360,6 +366,7 @@ class Teacher extends Admin_Controller {
 						$array["sex"] = $this->input->post("sex");
 						$array["shift"] = $this->input->post("shift");
 						$array["category"] = $this->input->post("categoryus");
+						$array["is_permanent"] = $this->input->post("is_permanent");
 						$array['religion'] = $this->input->post("religion");
 						$array['email'] = $this->input->post("email");
 						$array['phone'] = $this->input->post("phone");

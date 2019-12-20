@@ -142,6 +142,25 @@
                         </span>
                     </div>
 
+                    <?php
+                        if(form_error('is_permanent'))
+                            echo "<div class='form-group has-error' >";
+                        else
+                            echo "<div class='form-group' >";
+                    ?>
+                        <label for="is_permanent" class="col-sm-2 control-label">
+                            <?=$this->lang->line("type")?> <span class="text-red">*</span>
+                        </label>
+                        <div class="col-sm-6">
+                            <?php
+                                echo form_dropdown("is_permanent", array("1" => "Permanent", "0" => "Temporary"), set_value("is_permanent",$teacher->is_permanent), "id='is_permanent' class='form-control'");
+                            ?>
+                        </div>
+                        <span class="col-sm-4 control-label">
+                            <?php echo form_error('is_permanent'); ?>
+                        </span>
+                    </div>
+
                     <?php 
                         if(form_error('religion')) 
                             echo "<div class='form-group has-error' >";
@@ -238,7 +257,7 @@
                             PAN Number <span class="text-red">*</span>
                         </label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="pen" name="pen" value="<?=set_value('pen')?>" >
+                            <input type="text" class="form-control" id="pen" name="pen" value="<?=set_value('pen', $teacher->pen)?>" >
                         </div>
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('pen'); ?>
@@ -256,7 +275,7 @@
                             Aadhar Number <span class="text-red">*</span>
                         </label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="aadhar" name="aadhar" value="<?=set_value('aadhar')?>" >
+                            <input type="text" class="form-control" id="aadhar" name="aadhar" value="<?=set_value('aadhar',$teacher->aadhar)?>" >
                         </div>
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('aadhar'); ?>
@@ -274,7 +293,7 @@
                             ESIC Number
                         </label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="esic" name="esic" value="<?=set_value('esic')?>" >
+                            <input type="text" class="form-control" id="esic" name="esic" value="<?=set_value('esic',$teacher->esic)?>" >
                         </div>
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('esic'); ?>
@@ -292,7 +311,7 @@
                             PF Number
                         </label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="pfno" name="pfno" value="<?=set_value('pfno')?>" >
+                            <input type="text" class="form-control" id="pfno" name="pfno" value="<?=set_value('pfno',$teacher->pfno)?>" >
                         </div>
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('pfno'); ?>
@@ -310,7 +329,7 @@
                             Bank name
                         </label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="bankname" name="bankname" value="<?=set_value('bankname')?>" >
+                            <input type="text" class="form-control" id="bankname" name="bankname" value="<?=set_value('bankname',$teacher->bankname)?>" >
                         </div>
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('bankname'); ?>
@@ -328,7 +347,7 @@
                             Branch Name
                         </label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="branch" name="branch" value="<?=set_value('branch')?>" >
+                            <input type="text" class="form-control" id="branch" name="branch" value="<?=set_value('branch',$teacher->branch)?>" >
                         </div>
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('branch'); ?>
@@ -346,7 +365,7 @@
                             Account Number
                         </label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="accountno" name="accountno" value="<?=set_value('accountno')?>" >
+                            <input type="text" class="form-control" id="accountno" name="accountno" value="<?=set_value('accountno',$teacher->accountno)?>" >
                         </div>
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('accountno'); ?>
@@ -364,7 +383,7 @@
                             IFSC Number
                         </label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="ifsc" name="ifsc" value="<?=set_value('ifsc')?>" >
+                            <input type="text" class="form-control" id="ifsc" name="ifsc" value="<?=set_value('ifsc',$teacher->ifsc)?>" >
                         </div>
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('ifsc'); ?>

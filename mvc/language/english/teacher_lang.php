@@ -152,3 +152,4 @@ $lang['teacher_total_leave'] = 'Total Leave';
 
 $lang['shift'] = 'Shift';
 $lang['category'] = 'Category';
+$lang['type'] = 'Type';

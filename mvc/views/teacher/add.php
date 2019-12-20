@@ -142,6 +142,25 @@
                     </div>
 
                     <?php
+                        if(form_error('is_permanent'))
+                            echo "<div class='form-group has-error' >";
+                        else
+                            echo "<div class='form-group' >";
+                    ?>
+                        <label for="is_permanent" class="col-sm-2 control-label">
+                            <?=$this->lang->line("type")?> <span class="text-red">*</span>
+                        </label>
+                        <div class="col-sm-6">
+                            <?php
+                                echo form_dropdown("is_permanent", array("1" => "Permanent", "0" => "Temporary"), set_value("is_permanent"), "id='is_permanent' class='form-control'");
+                            ?>
+                        </div>
+                        <span class="col-sm-4 control-label">
+                            <?php echo form_error('is_permanent'); ?>
+                        </span>
+                    </div>
+
+                    <?php
                         if(form_error('religion'))
                             echo "<div class='form-group has-error' >";
                         else
